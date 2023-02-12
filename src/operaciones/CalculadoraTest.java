@@ -1,42 +1,32 @@
 package operaciones;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
+import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 class CalculadoraTest {
 
 	@Test
 	void testSuma() {
-		Calculadora calc=new Calculadora(20,10);
-		int resul=calc.suma();
-		assertEquals(30, resul);
+		Calculadora calc = new Calculadora(10, 20);
+		int resultado = calc.suma();
+		assertEquals(30, resultado);
 	}
 
 	@Test
 	void testResta() {
-		Calculadora calc=new Calculadora(20,10);
-		int resul=calc.resta();
-		assertEquals(10, resul);
+		fail("Not yet implemented");
 	}
 
 	@Test
 	void testMultiplica() {
-		Calculadora calc=new Calculadora(20,50);
-		int resul=calc.multiplica();
-		assertEquals("Fallo en la multiplicación", 200, resul);
+		fail("Not yet implemented");
 	}
 
 	@Test
 	void testDivide() {
-		try {
-			Calculadora calc=new Calculadora(20,0);
-			int resul=calc.divide();
-			fail("FALLO, debería haber lanzado la excepción");
-		} catch (ArithmeticException e){
-			
-		}
+		fail("Not yet implemented");
 	}
-		
+
 }
