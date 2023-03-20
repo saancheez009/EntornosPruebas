@@ -31,4 +31,12 @@ public class Calculadora {
 		int resul=num1/num2;
 		return resul;
 	}
+	
+	public boolean resta2() {
+		  if (num1 >= num2)
+		    return true;
+		  else
+		    return false;
+		}
+
 }
